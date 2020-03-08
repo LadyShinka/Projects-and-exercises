@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+<form>
+<h1>Register</h1>
+<p>First Name: <input type="text" name="firstName" placeholder="John" required="text"> Last Name: <input type="text" name="lastName" placeholder="Smith" required="text"></p>
+    <label for="Male">Male: </label>
+	<input id="Male" type="radio" name="sexType"> 
+	<label for="Female"> Female: </label>
+	<input id="Femle" type="radio" name="sexType">
+	<label for="Other">Other: </label>
+	<input id="Other" type="radio" name="sexType"></p>
+<p>Email: <input type="email" name="email" placeholder="your email" required="email"> Password <input type="Password" name="Password" placeholder="your password" pattern=".{5,10}" title="5 to 10 characters"></p> <!--minlength="5" maxlength="10"-->
+<!--add a label instead of an paragraph for each input type-->
+<p>Birthday: <select>
+	<option>Month</option><option>January</option><option>February</option><option>March</option>
+</select>
+             <select>
+             	<option>Day</option><option>25</option><option>30</option><option>13</option>
+             </select>
+             <select>
+             	<option>Year</option><option>1995</option><option>2000</option><option>1934</option>
+             </select>
+</p>
+    <p>I agree to the terms and conditions <input type="checkbox" name="t&c"></p>
+<button>Submit</button>
+</form>
+</body>
+</html>
